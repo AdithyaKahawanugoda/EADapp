@@ -4,6 +4,98 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".OwnerView">
+    tools:context=".OwnerView"
+    android:background="@drawable/owner_background_gradient">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="136dp"
+        android:layout_height="162dp"
+        android:contentDescription="@string/app_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.050000012"
+        app:srcCompat="@drawable/logo_no_text__transparent" />
+
+    <LinearLayout
+        android:layout_width="331dp"
+        android:layout_height="410dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.19999999">
+
+        <Button
+            android:id="@+id/owner_view_btn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#00C2CB"
+            android:elevation="@dimen/cardview_default_radius"
+            android:fontFamily="monospace"
+            android:text="@string/owner_view_btn1"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:id="@+id/owner_view_btn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/owner_view_btn2"
+            android:backgroundTint="#00C2CB"
+            android:fontFamily="monospace"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/owner_view_btn3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/owner_view_btn3"
+            android:backgroundTint="#00C2CB"
+            android:fontFamily="monospace"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/owner_view_btn4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/owner_view_btn4"
+            android:backgroundTint="#00C2CB"
+            android:fontFamily="monospace"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/owner_view_btn5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/owner_view_btn5"
+            android:backgroundTint="#00C2CB"
+            android:fontFamily="monospace"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

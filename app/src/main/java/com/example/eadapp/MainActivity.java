@@ -1,21 +1,13 @@
 package com.example.eadapp;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.ContextCompat;
 
-import android.app.ActionBar;
-import android.app.ActivityOptions;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
-import android.view.View;
-import android.view.WindowInsets;
-import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
-import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
@@ -24,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
     ImageView startupImg;
     Animation fade;
-    private static int STARTUP_SCREEN = 6;
+    private static final int STARTUP_SCREEN = 6;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,16 +44,13 @@ public class MainActivity extends AppCompatActivity {
         ScheduledExecutorService backgroundExecutor = Executors.newSingleThreadScheduledExecutor();
 
         // Execute a task in the background thread after 3 seconds.
-        backgroundExecutor.schedule(new Runnable() {
-            @Override
-            public void run() {
-                Intent intent = new Intent(MainActivity.this, OwnerView.class);
-                startActivity(intent);
-                //To remove this activity from activity list we use finish() - now users cannot open startup screen by pressing bak button
-                finish();
-                overridePendingTransition(
-                        R.anim.enter_activity, R.anim.exit_activity);
-            }
+        backgroundExecutor.schedule(() -> {
+            Intent intent = new Intent(MainActivity.this, OwnerView.class);
+            startActivity(intent);
+            //To remove this activity from activity list we use finish() - now users cannot open startup screen by pressing bak button
+            finish();
+            overridePendingTransition(
+                    R.anim.enter_activity, R.anim.exit_activity);
         }, STARTUP_SCREEN, TimeUnit.SECONDS);
 
 
