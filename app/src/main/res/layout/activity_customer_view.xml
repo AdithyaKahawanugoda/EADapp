@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".OwnerView"
+    tools:context=".CustomerView"
     android:background="@drawable/background_gradient">
-
 
     <ImageView
         android:id="@+id/imageView"
@@ -32,13 +31,13 @@
         app:layout_constraintVertical_bias="0.19999999">
 
         <Button
-            android:id="@+id/owner_view_btn1"
+            android:id="@+id/customer_view_btn1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:backgroundTint="#00C2CB"
             android:fontFamily="monospace"
-            android:text="@string/owner_view_btn1"
+            android:text="@string/customer_view_btn1"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="24sp"
@@ -46,10 +45,10 @@
             />
 
         <Button
-            android:id="@+id/owner_view_btn2"
+            android:id="@+id/customer_view_btn2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/owner_view_btn2"
+            android:text="@string/customer_view_btn2"
             android:backgroundTint="#00C2CB"
             android:fontFamily="monospace"
             android:textAlignment="center"
@@ -59,10 +58,10 @@
             android:layout_marginBottom="10dp"/>
 
         <Button
-            android:id="@+id/owner_view_btn3"
+            android:id="@+id/customer_view_btn3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/owner_view_btn3"
+            android:text="@string/customer_view_btn3"
             android:backgroundTint="#00C2CB"
             android:fontFamily="monospace"
             android:textAlignment="center"
@@ -72,10 +71,10 @@
             android:layout_marginBottom="10dp"/>
 
         <Button
-            android:id="@+id/owner_view_btn4"
+            android:id="@+id/customer_view_btn4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/owner_view_btn4"
+            android:text="@string/customer_view_btn4"
             android:backgroundTint="#00C2CB"
             android:fontFamily="monospace"
             android:textAlignment="center"
@@ -85,10 +84,10 @@
             android:layout_marginBottom="10dp"/>
 
         <Button
-            android:id="@+id/owner_view_btn5"
+            android:id="@+id/customer_view_btn5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/owner_view_btn5"
+            android:text="@string/customer_view_btn5"
             android:backgroundTint="#00C2CB"
             android:fontFamily="monospace"
             android:textAlignment="center"

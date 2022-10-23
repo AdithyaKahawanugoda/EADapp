@@ -2,9 +2,19 @@
     <string name="app_name">EADapp</string>
     <string name="app_logo">app logo</string>
     <string name="app_logo_no_text">in app logo</string>
+
+    <string name="login">LogIn</string>
+    <string name="register">Register</string>
+
     <string name="owner_view_btn1">Restock</string>
     <string name="owner_view_btn2">Update Price</string>
     <string name="owner_view_btn3">Update Quota</string>
     <string name="owner_view_btn4">View Availability</string>
     <string name="owner_view_btn5">Update Availability</string>
+
+    <string name="customer_view_btn1">Add New Vehicle</string>
+    <string name="customer_view_btn2">View Quota</string>
+    <string name="customer_view_btn3">Pump Fuel</string>
+    <string name="customer_view_btn4">Fuel Availability</string>
+    <string name="customer_view_btn5">Price List</string>
 </resources>
