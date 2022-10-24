@@ -13,6 +13,20 @@
         android:theme="@style/Theme.EADapp"
         tools:targetApi="31">
         <activity
+            android:name=".CheckPrice"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ViewQuota"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".ViewPagerAdapter"
             android:exported="false">
             <meta-data
@@ -41,7 +55,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".RecyclerViewAdapter"
+            android:name=".ViewQuotaAdapter"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

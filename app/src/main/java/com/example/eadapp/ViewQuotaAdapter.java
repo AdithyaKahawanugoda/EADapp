@@ -11,11 +11,11 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder> {
+public class ViewQuotaAdapter extends RecyclerView.Adapter<ViewQuotaAdapter.ViewHolder> {
     final Context context;
     private final ArrayList<VehicleList> vehicleList;
 
-    public RecyclerViewAdapter(Context context, ArrayList<VehicleList> vehicleList){
+    public ViewQuotaAdapter(Context context, ArrayList<VehicleList> vehicleList){
         this.context = context;
         this.vehicleList = vehicleList;
     }
@@ -31,8 +31,8 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         VehicleList vehicles = vehicleList.get(position);
         holder.vehicleNo.setText(vehicles.vehicleNo);
-        holder.availableQuota.setText(vehicles.fuelQuota);
-        holder.remainingQuota.setText(vehicles.fuelQuota);
+        holder.allocatedQuota.setText(vehicles.fuelQuota);
+        holder.remainingQuota.setText(vehicles.remainingQuota);
     }
 
     @Override
@@ -42,13 +42,13 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     public class ViewHolder extends RecyclerView.ViewHolder{
         private final TextView vehicleNo;
-        private final TextView availableQuota;
+        private final TextView allocatedQuota;
         private final TextView remainingQuota;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             vehicleNo = itemView.findViewById(R.id.cardLayoutTextViewR1);
-            availableQuota = itemView.findViewById(R.id.cardLayoutTextViewR2);
+            allocatedQuota = itemView.findViewById(R.id.cardLayoutTextViewR2);
             remainingQuota = itemView.findViewById(R.id.cardLayoutTextViewR3);
         }
     }
