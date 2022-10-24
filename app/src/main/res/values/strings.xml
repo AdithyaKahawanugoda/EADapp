@@ -56,4 +56,24 @@
         <item>Naphtha</item>
     </string-array>
 
+    <string name="UserRegistrationViewTextView">User Registration</string>
+    <string name="UserRegistrationViewEditText1">Name</string>
+    <string name="UserRegistrationViewEditText2">NIC</string>
+    <string name="UserRegistrationViewEditText3">Contact No</string>
+    <string name="UserRegistrationViewEditText4">Password</string>
+    <string name="OwnerRegistrationViewTextView">Owner Registration</string>
+    <string name="OwnerRegistrationViewEditText1">Name</string>
+    <string name="OwnerRegistrationViewEditText2">NIC</string>
+    <string name="OwnerRegistrationViewEditText3">Contact No</string>
+    <string name="OwnerRegistrationViewEditText4">Station ID</string>
+    <string name="OwnerRegistrationViewEditText5">Password</string>
+    <string name="OwnerRegistrationViewButton">Register</string>
+    <string name="UserRegistrationViewButton">Register</string>
+    <string name="UserLoginViewTextView">Login</string>
+    <string name="UserLoginViewEditText1">NIC</string>
+    <string name="UserLoginViewEditText2">Password</string>
+    <string name="UserLoginViewButton">Login</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>
