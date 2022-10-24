@@ -17,4 +17,23 @@
     <string name="customer_view_btn3">Pump Fuel</string>
     <string name="customer_view_btn4">Fuel Availability</string>
     <string name="customer_view_btn5">Price List</string>
+
+    <string name="anv_header">Register Vehicle</string>
+    <string name="anv_input_text1">Vehicle Number</string>
+    <string name="anv_input_text2">Chassis Number</string>
+    <string name="anv_input_text3">Vehicle Type</string>
+    <string name="anv_btn">Save</string>
+
+    <string name="vehicle_type_spinner">Select Vehicle Type</string>
+    <string-array name="vehicle_types_array">
+        <item>Select Vehicle Type</item>
+        <item>Car</item>
+        <item>Bike</item>
+        <item>Van</item>
+        <item>Three-Wheel</item>
+        <item>Tractor</item>
+        <item>SUV</item>
+        <item>Long-Vehicle</item>
+    </string-array>
+
 </resources>
