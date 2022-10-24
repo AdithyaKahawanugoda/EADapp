@@ -24,6 +24,15 @@
     <string name="anv_input_text3">Vehicle Type</string>
     <string name="anv_btn">Save</string>
 
+    <string name="restock_header">Restock Station</string>
+    <string name="restock_input_text1">Fuel Type</string>
+    <string name="restock_input_text2">Restock Volume</string>
+    <string name="restock_input_text3">Arrival Date</string>
+    <string name="restock_input_text4">Arrival Time</string>
+    <string name="restock_btn1">Date</string>
+    <string name="restock_btn2">Time</string>
+    <string name="restock_btn3">Save</string>
+
     <string name="vehicle_type_spinner">Select Vehicle Type</string>
     <string-array name="vehicle_types_array">
         <item>Select Vehicle Type</item>
@@ -34,6 +43,17 @@
         <item>Tractor</item>
         <item>SUV</item>
         <item>Long-Vehicle</item>
+    </string-array>
+
+    <string name="fuel_type_spinner">Select Fuel Type</string>
+    <string-array name="fuel_types_array">
+        <item>Select Fuel Type</item>
+        <item>Petrol (92 Octane)</item>
+        <item>Petrol (95 Octane)</item>
+        <item>Auto Diesel</item>
+        <item>Super Diesel</item>
+        <item>Kerosene</item>
+        <item>Naphtha</item>
     </string-array>
 
 </resources>

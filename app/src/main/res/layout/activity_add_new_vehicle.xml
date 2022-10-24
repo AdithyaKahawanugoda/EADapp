@@ -38,7 +38,7 @@
             android:importantForAutofill="no"
             android:inputType="textPersonName"
             android:minHeight="48dp"
-            android:text="@string/anv_input_text1"
+            android:hint="@string/anv_input_text1"
             android:textColor="#B0BEC5"
             android:textStyle="bold" />
 
@@ -51,7 +51,7 @@
             android:importantForAutofill="no"
             android:inputType="textPersonName"
             android:minHeight="48dp"
-            android:text="@string/anv_input_text2"
+            android:hint="@string/anv_input_text2"
             android:textColor="#B0BEC5"
             android:textStyle="bold" />
 
@@ -75,4 +75,5 @@
             android:textSize="24sp"
             android:textStyle="bold"/>
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
