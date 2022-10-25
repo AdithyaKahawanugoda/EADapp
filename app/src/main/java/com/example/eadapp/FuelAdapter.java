@@ -23,10 +23,10 @@ public class FuelAdapter extends RecyclerView.Adapter<FuelAdapter.ViewHolder> {
 
     @NonNull
     @Override
-    public FuelAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         //inflate the layout for each of the items in the recyclerview
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.card_layout, parent, false);
-        return new FuelAdapter.ViewHolder(view);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.fuel_availability_card_layout, parent, false);
+        return new ViewHolder(view);
     }
 
     @Override
