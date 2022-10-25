@@ -46,6 +46,8 @@
     <string name="update_availability_header">Station Fuel Availability</string>
     <string name="update_availability_btn1">Update</string>
 
+    <string name="view_quota_header">Weekly Fuel Quota Allocation</string>
+
     <string name="vehicle_type_spinner">Select Vehicle Type</string>
     <string-array name="vehicle_types_array">
         <item>Select Vehicle Type</item>
