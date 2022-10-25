@@ -31,7 +31,7 @@
             android:textStyle="bold" />
 
         <Spinner
-            android:id="@+id/update_price_input_fuel_spinner"
+            android:id="@+id/ufa_input_fuel_spinner"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="10"

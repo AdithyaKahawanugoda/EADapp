@@ -71,6 +71,7 @@
 
     <string name="fuel_availability_status_spinner">Availability Status</string>
     <string-array name="fuel_availability_status_array">
+        <item>Select Availability</item>
         <item>Available</item>
         <item>Unavailable</item>
     </string-array>
