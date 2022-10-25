@@ -13,6 +13,11 @@ public class Registration extends AppCompatActivity {
     private TabLayout tabLayout;
     private ViewPager2 viewPager;
 
+    /**
+     * Method used when an activity is first created
+     *
+     * @param savedInstanceState
+     */
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,9 +27,11 @@ public class Registration extends AppCompatActivity {
         tabLayout = findViewById(R.id.reg_tab_layout);
         viewPager = findViewById(R.id.reg_view_pager);
 
+        //set adapter of the viewPager
         ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(this);
         viewPager.setAdapter(viewPagerAdapter);
 
+        //set listener to the tab selection
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {

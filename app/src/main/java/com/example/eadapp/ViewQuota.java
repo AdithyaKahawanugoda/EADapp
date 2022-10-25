@@ -8,8 +8,16 @@ import android.os.Bundle;
 
 import java.util.ArrayList;
 
+/**
+ * ViewQuota Class implements the functionality of when a user views the weekly quota of fuel.
+ */
 public class ViewQuota extends AppCompatActivity {
 
+    /**
+     * Method used when an activity is first created
+     *
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

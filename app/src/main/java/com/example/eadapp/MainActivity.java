@@ -12,12 +12,20 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * MainActivity Class implements the functionality of the Splash Screen of the system
+ */
 public class MainActivity extends AppCompatActivity {
 
     ImageView startupImg;
     Animation fade;
     private static final int STARTUP_SCREEN = 6;
 
+    /**
+     * Method used when an activity is first created
+     *
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

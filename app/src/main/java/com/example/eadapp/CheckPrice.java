@@ -9,6 +9,11 @@ import android.os.Bundle;
 
 import java.util.ArrayList;
 
+/**
+ *
+ * CheckPrice Class is used to implement the functionality when a user tries to view the fuel price
+ *
+ */
 public class CheckPrice extends AppCompatActivity {
 
     @Override

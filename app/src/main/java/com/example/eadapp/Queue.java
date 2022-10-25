@@ -1,5 +1,8 @@
 package com.example.eadapp;
 
+/**
+ * Model Class for Queue
+ */
 public class Queue {
     String customerId;
     String stationId;
@@ -22,6 +25,7 @@ public class Queue {
         this.visitStatus =visitStatus;
     }
 
+    // Getters and Setters
     public String getCustomerId() {
         return customerId;
     }

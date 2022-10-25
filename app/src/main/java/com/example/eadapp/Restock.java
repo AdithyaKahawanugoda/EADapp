@@ -22,6 +22,11 @@ public class Restock extends AppCompatActivity implements AdapterView.OnItemSele
     private Button dateBtn, timeBtn;
     private int hour, minute;
 
+    /**
+     * Method used when an activity is first created
+     *
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,6 +49,11 @@ public class Restock extends AppCompatActivity implements AdapterView.OnItemSele
         timeBtn = findViewById(R.id.restock_btn2);
     }
 
+    /**
+     * Method to obtain the current date
+     *
+     * @return
+     */
     private String getTodayDate() {
         Calendar cal = Calendar.getInstance();
         int year = cal.get(Calendar.YEAR);
@@ -53,10 +63,24 @@ public class Restock extends AppCompatActivity implements AdapterView.OnItemSele
         return makeDateString(day, month, year);
     }
 
+    /**
+     * Method to convert date to string
+     *
+     * @param day
+     * @param month
+     * @param year
+     * @return
+     */
     private String makeDateString(int day, int month, int year) {
         return getMonthFormat(month) + " " + day + " " + year;
     }
 
+    /**
+     * Method to obtain month
+     *
+     * @param month
+     * @return
+     */
     private String getMonthFormat(int month) {
         if(month == 1)
             return "JAN";
@@ -87,6 +111,9 @@ public class Restock extends AppCompatActivity implements AdapterView.OnItemSele
         return "JAN";
     }
 
+    /**
+     *  Initialize Date Picker
+     */
     private void initDatePicker() {
         DatePickerDialog.OnDateSetListener dateSetListener = (datePicker, year, month, day) -> {
             month = month + 1;
@@ -105,11 +132,21 @@ public class Restock extends AppCompatActivity implements AdapterView.OnItemSele
         //datePickerDialog.getDatePicker().setMaxDate(System.currentTimeMillis());
     }
 
+    /**
+     * Open Date Picker
+     *
+     * @param view
+     */
     public void openDatePicker(View view)
     {
         datePickerDialog.show();
     }
 
+    /**
+     * Pop the TimePicker
+     *
+     * @param view
+     */
     public void popTimePicker(View view)
     {
         TimePickerDialog.OnTimeSetListener onTimeSetListener = (timePicker, selectedHour, selectedMinute) -> {
@@ -126,6 +163,14 @@ public class Restock extends AppCompatActivity implements AdapterView.OnItemSele
         timePickerDialog.show();
     }
 
+    /**
+     * Method used to callback when an item is selected in this view
+     *
+     * @param adapterView
+     * @param view
+     * @param i
+     * @param l
+     */
     @Override
     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
         String text = adapterView.getItemAtPosition(i).toString();

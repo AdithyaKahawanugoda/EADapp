@@ -1,5 +1,8 @@
 package com.example.eadapp;
 
+/**
+ * Model Class for Vehicle
+ */
 public class VehicleList {
     private String vehicleNo;
     private String vehicleType;
@@ -16,7 +19,7 @@ public class VehicleList {
         this.remainingQuota = remainingQuota;
     }
 
-    //Getters
+    //Getters and Setters
     public String getVehicleNo() {
         return vehicleNo;
     }

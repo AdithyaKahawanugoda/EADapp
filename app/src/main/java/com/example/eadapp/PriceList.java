@@ -1,5 +1,8 @@
 package com.example.eadapp;
 
+/**
+ * Model Class for PriceList
+ */
 public class PriceList {
     String fuelType;
     int price;

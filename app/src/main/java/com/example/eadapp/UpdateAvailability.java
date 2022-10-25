@@ -9,8 +9,16 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+/**
+ * UpdateAvailability Class implements the functionality of when the owner updates the fuel availability
+ */
 public class UpdateAvailability extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
+    /**
+     * Method used when an activity is first created
+     *
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +45,14 @@ public class UpdateAvailability extends AppCompatActivity implements AdapterView
         fuelAvailabilityStatusSpinner.setOnItemSelectedListener(this);
     }
 
+    /**
+     * Method used to callback when an item is selected in this view
+     *
+     * @param adapterView
+     * @param view
+     * @param i
+     * @param l
+     */
     @Override
     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
         String text = adapterView.getItemAtPosition(i).toString();

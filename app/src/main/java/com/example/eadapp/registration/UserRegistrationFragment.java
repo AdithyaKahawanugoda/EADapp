@@ -10,6 +10,9 @@ import android.view.ViewGroup;
 
 import com.example.eadapp.R;
 
+/**
+ * Fragment containing Customer Registration Form
+ */
 public class UserRegistrationFragment extends Fragment {
 
     @Override

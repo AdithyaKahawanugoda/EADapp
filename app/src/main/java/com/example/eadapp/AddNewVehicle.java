@@ -9,10 +9,20 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+/**
+ *
+ * AddNewVehicle Class used to implement the functionality where the user adds vehicle to the system
+ *
+ */
 public class AddNewVehicle extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
 
     Spinner vehicleTypesSpinner;
 
+    /**
+     * Method used when the activity is created first
+     *
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,11 +34,19 @@ public class AddNewVehicle extends AppCompatActivity implements AdapterView.OnIt
         R.array.vehicle_types_array, android.R.layout.simple_spinner_item);
         // Specify the layout to use when the list of choices appears
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        // Apply the adapter to the spinner
+        // Apply the adapter and listener to the spinner
         vehicleTypesSpinner.setAdapter(adapter);
         vehicleTypesSpinner.setOnItemSelectedListener(this);
     }
 
+    /**
+     * Method used to callback when an item is selected in this view
+     *
+     * @param adapterView
+     * @param view
+     * @param i
+     * @param l
+     */
     @Override
     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
         String text = adapterView.getItemAtPosition(i).toString();

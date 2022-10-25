@@ -13,8 +13,18 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
+/**
+ *
+ * CheckFuelAvailability Class contains all activities related to the viewing of the availability of fuel
+ *
+ */
 public class CheckFuelAvailability extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
+    /**
+     * Method used when an activity is first created
+     *
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,6 +52,14 @@ public class CheckFuelAvailability extends AppCompatActivity implements AdapterV
         stationSpinner.setOnItemSelectedListener(this);
     }
 
+    /**
+     * Method used to callback when an item is selected in this view
+     *
+     * @param adapterView
+     * @param view
+     * @param i
+     * @param l
+     */
     @Override
     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
         String text = adapterView.getItemAtPosition(i).toString();

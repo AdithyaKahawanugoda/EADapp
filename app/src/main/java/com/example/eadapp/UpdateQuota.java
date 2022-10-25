@@ -9,8 +9,16 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+/**
+ * UpdateQuota Class implements the functionality when an owner updates the weekly fuel quota in the app
+ */
 public class UpdateQuota extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
+    /**
+     * Method used when an activity is first created
+     *
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +35,14 @@ public class UpdateQuota extends AppCompatActivity implements AdapterView.OnItem
         vehicleTypesSpinner.setOnItemSelectedListener(this);
     }
 
+    /**
+     * Method used to callback when an item is selected in this view
+     *
+     * @param adapterView
+     * @param view
+     * @param i
+     * @param l
+     */
     @Override
     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
         String text = adapterView.getItemAtPosition(i).toString();
