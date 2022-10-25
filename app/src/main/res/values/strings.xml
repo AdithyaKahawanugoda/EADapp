@@ -26,12 +26,25 @@
 
     <string name="restock_header">Restock Station</string>
     <string name="restock_input_text1">Fuel Type</string>
-    <string name="restock_input_text2">Restock Volume</string>
+    <string name="restock_input_text2">Restock Volume (Liter)</string>
     <string name="restock_input_text3">Arrival Date</string>
     <string name="restock_input_text4">Arrival Time</string>
     <string name="restock_btn1">Date</string>
     <string name="restock_btn2">Time</string>
     <string name="restock_btn3">Save</string>
+
+    <string name="update_price_header">Fuel Price Updater</string>
+    <string name="update_price_input_text1">Old Price (LKR)</string>
+    <string name="update_price_input_text2">New Price (LKR)</string>
+    <string name="update_price_btn1">Update</string>
+
+    <string name="update_quota_header">Vehicle Fuel Quota Updater</string>
+    <string name="update_quota_input_text1">Previous Quota (Liter)</string>
+    <string name="update_quota_input_text2">New Quota (Liter)</string>
+    <string name="update_quota_btn1">Update</string>
+
+    <string name="update_availability_header">Station Fuel Availability</string>
+    <string name="update_availability_btn1">Update</string>
 
     <string name="vehicle_type_spinner">Select Vehicle Type</string>
     <string-array name="vehicle_types_array">
@@ -54,6 +67,13 @@
         <item>Super Diesel</item>
         <item>Kerosene</item>
         <item>Naphtha</item>
+    </string-array>
+
+    <string name="fuel_availability_status_spinner">Availability Status</string>
+    <string-array name="fuel_availability_status_array">
+        <item>Select Availability</item>
+        <item>Available</item>
+        <item>Unavailable</item>
     </string-array>
 
     <string name="UserRegistrationViewTextView">User Registration</string>
