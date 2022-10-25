@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UpdatePrice"
+    tools:context=".UpdateAvailability"
     android:background="@drawable/background_gradient">
+
 
     <LinearLayout
         android:layout_width="0dp"
@@ -19,12 +20,12 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/update_price_header"
+            android:id="@+id/update_availability_header"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="monospace"
             android:paddingBottom="40dp"
-            android:text="@string/update_price_header"
+            android:text="@string/update_availability_header"
             android:textColor="#26C6DA"
             android:textSize="28sp"
             android:textStyle="bold" />
@@ -39,40 +40,23 @@
             android:minHeight="48dp"
             android:outlineProvider="none" />
 
-        <EditText
-            android:id="@+id/update_price_input_text1"
+        <Spinner
+            android:id="@+id/update_availability_status_spinner"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:fontFamily="monospace"
-            android:importantForAutofill="no"
-            android:inputType="numberDecimal"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:autofillHints="@string/fuel_availability_status_spinner"
+            android:contentDescription="@string/fuel_availability_status_spinner"
             android:minHeight="48dp"
-            android:hint="@string/update_price_input_text1"
-            android:textColor="#B0BEC5"
-            android:textStyle="bold" />
-
-        <EditText
-            android:id="@+id/update_price_input_text2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:fontFamily="monospace"
-            android:importantForAutofill="no"
-            android:inputType="numberDecimal"
-            android:minHeight="48dp"
-            android:hint="@string/update_price_input_text2"
-            android:textColor="#B0BEC5"
-            android:textStyle="bold"
-            />
+            android:outlineProvider="none" />
 
         <Button
-            android:id="@+id/update_price_btn1"
+            android:id="@+id/update_availability_btn1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#00C2CB"
             android:fontFamily="monospace"
-            android:text="@string/update_price_btn1"
+            android:text="@string/update_availability_btn1"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="24sp"
