@@ -15,6 +15,7 @@ public class JoinQueueAdapter extends RecyclerView.Adapter<JoinQueueAdapter.View
     final Context context;
     private final ArrayList<Queue> queueArrayList;
 
+    //Constructor
     public JoinQueueAdapter(Context context, ArrayList<Queue> queueArrayList){
         this.context = context;
         this.queueArrayList = queueArrayList;
@@ -23,21 +24,24 @@ public class JoinQueueAdapter extends RecyclerView.Adapter<JoinQueueAdapter.View
     @NonNull
     @Override
     public JoinQueueAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        //inflate the layout for each of the items in the recyclerview
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.card_layout, parent, false);
         return new JoinQueueAdapter.ViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull JoinQueueAdapter.ViewHolder holder, int position) {
+        //assigning values to text views in the card layout
         Queue queues = queueArrayList.get(position);
-        holder.queueLength.setText(queueArrayList.size());
-        holder.fuelType.setText(queues.fuelType);
-        holder.fuelStatus.setText(queues.visitStatus);
-        holder.timeSpent.setText(queues.arrivalTime-queues.exitTime);
+        holder.queueLength.setText(queueArrayList.size()+"");
+        holder.fuelType.setText(queues.getFuelType());
+        holder.fuelStatus.setText(queues.getVisitStatus());
+        holder.timeSpent.setText(Integer.toString(queues.getExitTime()-queues.getArrivalTime()));
     }
 
     @Override
     public int getItemCount() {
+        //display the number of cards in the recycler view
         return queueArrayList.size();
     }
 
@@ -48,6 +52,7 @@ public class JoinQueueAdapter extends RecyclerView.Adapter<JoinQueueAdapter.View
         private final TextView fuelType;
 
         public ViewHolder(@NonNull View itemView) {
+            //initialize views
             super(itemView);
             fuelType = itemView.findViewById(R.id.pumpFuelCard_TextViewR1);
             queueLength = itemView.findViewById(R.id.pumpFuelCard_TextViewR2);

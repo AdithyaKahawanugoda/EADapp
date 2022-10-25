@@ -7,6 +7,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
@@ -18,7 +19,6 @@ public class JoinQueue extends AppCompatActivity implements AdapterView.OnItemSe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_join_queue);
-
 
         // Create an ArrayAdapter using the string array and a default spinner layout
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
@@ -35,9 +35,17 @@ public class JoinQueue extends AppCompatActivity implements AdapterView.OnItemSe
         String spinnerValue = stationSpinner.getSelectedItem().toString();
 //        if(spinnerValue){} ---IMPLEMENT- Fetch DB data values to Arraylist according to the spinner value
         RecyclerView pumpFuel = findViewById(R.id.join_queue_recycler);
+
         ArrayList<Queue> queueArrayList = new ArrayList<Queue>();
         queueArrayList.add(new Queue("CU001","A-1", "Petrol", "NA-1234", "24/10/22", 8, 10, "Active"));
+
+        //initialize adapter and pass arraylist
         JoinQueueAdapter joinQueueAdapter = new JoinQueueAdapter(this, queueArrayList);
+
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
+
+        //set layout manager and adapter to recycler view
+        pumpFuel.setLayoutManager(linearLayoutManager);
         pumpFuel.setAdapter(joinQueueAdapter);
 //      IMPLEMENT Button change after clicking JOIN QUEUE
 

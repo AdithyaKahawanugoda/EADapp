@@ -7,6 +7,7 @@ public class VehicleList {
     private int fuelQuota;
     private int remainingQuota;
 
+    //Constructor
     public VehicleList(String vehicleNo, String vehicleType, String chassisNo, int fuelQuota, int remainingQuota){
         this.vehicleNo = vehicleNo;
         this.vehicleType = vehicleType;
@@ -15,6 +16,7 @@ public class VehicleList {
         this.remainingQuota = remainingQuota;
     }
 
+    //Getters
     public String getVehicleNo() {
         return vehicleNo;
     }

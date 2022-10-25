@@ -15,6 +15,7 @@ public class ViewQuotaAdapter extends RecyclerView.Adapter<ViewQuotaAdapter.View
     final Context context;
     private final ArrayList<VehicleList> vehicleList;
 
+    //Constructor
     public ViewQuotaAdapter(Context context, ArrayList<VehicleList> vehicleList){
         this.context = context;
         this.vehicleList = vehicleList;
@@ -23,12 +24,14 @@ public class ViewQuotaAdapter extends RecyclerView.Adapter<ViewQuotaAdapter.View
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        //inflate the layout for each of the items in the recyclerview
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.card_layout, parent, false);
         return new ViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+        //assigning values to text views in the card layout
         VehicleList vehicles = vehicleList.get(position);
         holder.vehicleNo.setText(vehicles.getVehicleNo());
         holder.allocatedQuota.setText(vehicles.getFuelQuota()+"");
@@ -37,6 +40,7 @@ public class ViewQuotaAdapter extends RecyclerView.Adapter<ViewQuotaAdapter.View
 
     @Override
     public int getItemCount() {
+        //display the number of cards in the recycler view
         return vehicleList.size();
     }
 
@@ -46,6 +50,7 @@ public class ViewQuotaAdapter extends RecyclerView.Adapter<ViewQuotaAdapter.View
         private final TextView remainingQuota;
 
         public ViewHolder(@NonNull View itemView) {
+            //initialize views
             super(itemView);
             vehicleNo = itemView.findViewById(R.id.cardLayoutTextViewR1);
             allocatedQuota = itemView.findViewById(R.id.cardLayoutTextViewR2);
