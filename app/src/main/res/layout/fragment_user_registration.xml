@@ -14,14 +14,15 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="56dp"
         android:ems="10"
+        android:hint="@string/UserRegistrationViewEditText1"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:text="@string/UserRegistrationViewEditText1"
+        android:fontFamily="monospace"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/userRegistrationViewTextView"
-        android:importantForAutofill="no" />
+        app:layout_constraintTop_toBottomOf="@+id/userRegistrationViewTextView" />
 
     <EditText
         android:id="@+id/userRegistrationViewEditText3"
@@ -29,14 +30,15 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="52dp"
         android:ems="10"
+        android:hint="@string/UserRegistrationViewEditText3"
+        android:importantForAutofill="no"
         android:inputType="numberDecimal"
         android:minHeight="48dp"
-        android:text="@string/UserRegistrationViewEditText3"
+        android:fontFamily="monospace"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/userRegistrationViewEditText2"
-        android:importantForAutofill="no" />
+        app:layout_constraintTop_toBottomOf="@+id/userRegistrationViewEditText2" />
 
     <EditText
         android:id="@+id/userRegistrationViewEditText4"
@@ -44,13 +46,14 @@
         android:layout_height="51dp"
         android:layout_marginTop="52dp"
         android:ems="10"
+        android:fontFamily="monospace"
+        android:hint="@string/UserRegistrationViewEditText4"
+        android:importantForAutofill="no"
         android:inputType="textPassword"
-        android:text="@string/UserRegistrationViewEditText4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/userRegistrationViewEditText3"
-        android:importantForAutofill="no" />
+        app:layout_constraintTop_toBottomOf="@+id/userRegistrationViewEditText3" />
 
     <Button
         android:id="@+id/userRegistrationViewButton"
@@ -62,6 +65,7 @@
         android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="bold"
+        android:fontFamily="monospace"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -75,14 +79,14 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="52dp"
         android:ems="10"
+        android:hint="@string/UserRegistrationViewEditText2"
+        android:importantForAutofill="no"
         android:inputType="numberDecimal"
         android:minHeight="48dp"
-        android:text="@string/UserRegistrationViewEditText2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/userRegistrationViewEditText1"
-        android:importantForAutofill="no" />
+        app:layout_constraintTop_toBottomOf="@+id/userRegistrationViewEditText1" />
 
     <TextView
         android:id="@+id/userRegistrationViewTextView"
