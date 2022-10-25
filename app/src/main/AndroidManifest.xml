@@ -19,6 +19,13 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+        <activity
+            android:name=".ViewQuota"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
             <activity
             android:name=".JoinQueue"
             android:exported="false">
@@ -77,13 +84,6 @@
         </activity>
         <activity
             android:name=".VehicleList"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".RecyclerViewAdapter"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

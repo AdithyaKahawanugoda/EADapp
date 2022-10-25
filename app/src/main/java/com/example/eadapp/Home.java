@@ -9,14 +9,14 @@ import android.widget.Button;
 
 public class Home extends AppCompatActivity {
 
-    private Button loginBtn, regBtn;
+    private Button regBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        loginBtn = findViewById(R.id.home_login_btn);
+        Button loginBtn = findViewById(R.id.home_login_btn);
         regBtn = findViewById(R.id.home_register_btn);
 
         loginBtn.setOnClickListener(new View.OnClickListener() {

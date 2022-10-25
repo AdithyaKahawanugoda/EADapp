@@ -17,7 +17,7 @@ public class ViewQuota extends AppCompatActivity {
 
         RecyclerView viewQuota = findViewById(R.id.view_quota_recycler);
 
-        ArrayList<VehicleList> vehicleList = new ArrayList<VehicleList>();
+        ArrayList<VehicleList> vehicleList = new ArrayList<>();
         vehicleList.add(new VehicleList("NA-5634","Car", "AZ-12-2345-123", 20, 12));
         vehicleList.add(new VehicleList("NA-5635","Car", "AZ-12-2345-123", 20, 12));
 
