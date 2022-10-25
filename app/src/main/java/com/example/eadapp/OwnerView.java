@@ -25,7 +25,7 @@ public class OwnerView extends AppCompatActivity {
         restockBtn.setOnClickListener(v -> startActivity(new Intent(getApplicationContext(),Restock.class)));
         updatePriceBtn.setOnClickListener(v -> startActivity(new Intent(getApplicationContext(),UpdatePrice.class)));
         updateQuotaBtn.setOnClickListener(v -> startActivity(new Intent(getApplicationContext(),UpdateQuota.class)));
-//      viewAvailabilityBtn.setOnClickListener(v -> startActivity(new Intent(getApplicationContext(),xxx.class)));
+        viewAvailabilityBtn.setOnClickListener(v -> startActivity(new Intent(getApplicationContext(),CheckFuelAvailability.class)));
         updateAvailabilityBtn.setOnClickListener(v -> startActivity(new Intent(getApplicationContext(),UpdateAvailability.class)));
 
     }

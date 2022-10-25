@@ -30,9 +30,9 @@ public class ViewQuotaAdapter extends RecyclerView.Adapter<ViewQuotaAdapter.View
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         VehicleList vehicles = vehicleList.get(position);
-        holder.vehicleNo.setText(vehicles.vehicleNo);
-        holder.allocatedQuota.setText(vehicles.fuelQuota);
-        holder.remainingQuota.setText(vehicles.remainingQuota);
+        holder.vehicleNo.setText(vehicles.getVehicleNo());
+        holder.allocatedQuota.setText(vehicles.getFuelQuota());
+        holder.remainingQuota.setText(vehicles.getRemainingQuota());
     }
 
     @Override
