@@ -5,14 +5,16 @@ public class VehicleList {
     String vehicleType;
     String chassisNo;
     int fuelQuota;
+    int remainingQuota;
 
     public VehicleList(){
     }
 
-    public VehicleList(String vehicleNo, String vehicleType, String chassisNo, int fuelQuota){
+    public VehicleList(String vehicleNo, String vehicleType, String chassisNo, int fuelQuota, int remainingQuota){
         this.vehicleNo = vehicleNo;
         this.vehicleType = vehicleType;
         this.chassisNo = chassisNo;
         this.fuelQuota = fuelQuota;
+        this.remainingQuota = remainingQuota;
     }
 }

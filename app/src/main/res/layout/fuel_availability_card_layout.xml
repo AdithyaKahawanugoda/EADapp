@@ -19,33 +19,23 @@
                 android:orientation="vertical"
                 android:layout_weight="1">
                 <TextView
-                    android:id="@+id/cardLayoutTextViewL1"
+                    android:id="@+id/fuelAvailabilityCard_TextViewL1"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Vehicle No:"
+                    android:text="Fuel Type:"
                     android:textSize="20sp"
                     android:textAlignment="center"
                     android:textStyle="bold"
                     android:padding="10dp"/>
                 <TextView
-                    android:id="@+id/cardLayoutTextViewL2"
+                    android:id="@+id/fuelAvailabilityCard_TextViewL2"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Allocated Quota:"
+                    android:text="Status:"
                     android:textStyle="bold"
                     android:textAlignment="center"
-                    android:textSize="20sp"
-                    android:padding="10dp"/>
-                <TextView
-                    android:id="@+id/cardLayoutTextViewL3"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Remaining Quota:"
-                    android:textAlignment="center"
-                    android:textStyle="bold"
                     android:textSize="20sp"
                     android:padding="10dp"/>
             </LinearLayout>
@@ -55,7 +45,7 @@
                 android:orientation="vertical"
                 android:layout_weight="1">
                 <TextView
-                    android:id="@+id/cardLayoutTextViewR1"
+                    android:id="@+id/fuelAvailabilityCard_TextViewR1"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -63,15 +53,7 @@
                     android:textSize="20sp"
                     android:padding="10dp"/>
                 <TextView
-                    android:id="@+id/cardLayoutTextViewR2"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textStyle="bold"
-                    android:textSize="20sp"
-                    android:padding="10dp"/>
-                <TextView
-                    android:id="@+id/cardLayoutTextViewR3"
+                    android:id="@+id/fuelAvailabilityCard_TextViewR2"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
