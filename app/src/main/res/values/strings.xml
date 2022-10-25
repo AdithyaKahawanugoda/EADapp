@@ -73,6 +73,15 @@
     <string name="UserLoginViewEditText1">NIC</string>
     <string name="UserLoginViewEditText2">Password</string>
     <string name="UserLoginViewButton">Login</string>
+
+    <string-array name="station_array">
+        <item>Select Station</item>
+        <item>Station A</item>
+        <item>Station B</item>
+        <item>Station C</item>
+        <item>Station D</item>
+        <item>Station E</item>
+    </string-array>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
