@@ -42,8 +42,8 @@
         android:layout_height="48dp"
         android:layout_marginTop="32dp"
         android:ems="10"
+        android:hint="@string/OwnerRegistrationViewEditText3"
         android:inputType="numberDecimal"
-        android:text="@string/OwnerRegistrationViewEditText3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -55,22 +55,22 @@
         android:layout_height="51dp"
         android:layout_marginTop="32dp"
         android:ems="10"
+        android:hint="@string/OwnerRegistrationViewEditText5"
+        android:importantForAutofill="no"
         android:inputType="textPassword"
-        android:text="@string/OwnerRegistrationViewEditText5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ownerRegistrationViewEditText4"
-        android:importantForAutofill="no" />
+        app:layout_constraintTop_toBottomOf="@+id/ownerRegistrationViewEditText4" />
 
     <Button
         android:id="@+id/ownerRegistrationViewButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="56dp"
-        android:text="@string/OwnerRegistrationViewButton"
         android:backgroundTint="#00C2CB"
         android:fontFamily="monospace"
+        android:text="@string/OwnerRegistrationViewButton"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="24sp"
@@ -88,13 +88,13 @@
         android:layout_height="48dp"
         android:layout_marginTop="32dp"
         android:ems="10"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
-        android:text="@string/OwnerRegistrationViewEditText4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ownerRegistrationViewEditText3"
-        android:importantForAutofill="no" />
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
         android:id="@+id/ownerRegistrationViewTextView"
@@ -105,7 +105,7 @@
         android:backgroundTint="#00C2CB"
         android:fontFamily="monospace"
         android:textAlignment="center"
-        android:textColor="@color/white"
+        android:textColor="#26C6DA"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"

@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Registration">
+    tools:context=".Registration"
+    android:background="@drawable/background_gradient">
 
     <com.google.android.material.tabs.TabLayout
         android:layout_width="match_parent"
@@ -13,12 +14,14 @@
         <com.google.android.material.tabs.TabItem
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/UserRegistrationViewTextView" />
+            android:text="@string/UserRegistrationViewTextView"
+            android:textColor="@color/white"/>
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/OwnerRegistrationViewTextView" />
+            android:text="@string/OwnerRegistrationViewTextView"
+            android:textColor="@color/white"/>
 
     </com.google.android.material.tabs.TabLayout>
 

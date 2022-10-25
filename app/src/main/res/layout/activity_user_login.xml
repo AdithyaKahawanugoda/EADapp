@@ -13,7 +13,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="112dp"
         android:text="@string/UserLoginViewTextView"
-        android:textColor="@color/black"
+        android:textColor="#26C6DA"
+        android:fontFamily="monospace"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -27,14 +28,14 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
         android:ems="10"
+        android:hint="@string/UserLoginViewEditText1"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:text="@string/UserLoginViewEditText1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/userLoginViewTextView"
-        android:importantForAutofill="no" />
+        app:layout_constraintTop_toBottomOf="@+id/userLoginViewTextView" />
 
     <EditText
         android:id="@+id/userLoginViewEditText2"
@@ -42,20 +43,25 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="72dp"
         android:ems="10"
+        android:hint="@string/UserLoginViewEditText2"
+        android:importantForAutofill="no"
         android:inputType="textPassword"
         android:minHeight="48dp"
-        android:text="@string/UserLoginViewEditText2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/userLoginViewEditText1"
-        android:importantForAutofill="no" />
+        app:layout_constraintTop_toBottomOf="@+id/userLoginViewEditText1" />
 
     <Button
         android:id="@+id/userLoginViewButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/UserLoginViewButton"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:fontFamily="monospace"
+        android:textColor="@color/white"
+        android:backgroundTint="#00C2CB"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
