@@ -15,7 +15,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/UserRegistrationViewTextView"
-            android:textColor="@color/white"/>
+            android:textColor="@color/white" />
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="match_parent"

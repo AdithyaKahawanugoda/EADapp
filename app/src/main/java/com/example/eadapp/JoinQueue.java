@@ -1,9 +1,12 @@
 package com.example.eadapp;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -15,10 +18,17 @@ import java.util.ArrayList;
 
 public class JoinQueue extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
 
+    Button joinQueueBtn,ebpfBtn,eapfBtn;
+
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_join_queue);
+
+        joinQueueBtn = findViewById(R.id.join_queue_btn1);
+        eapfBtn = findViewById(R.id.join_queue_btn2);
+        ebpfBtn = findViewById(R.id.join_queue_btn3);
 
         RecyclerView pumpFuel = findViewById(R.id.join_queue_recycler);
         ArrayList<Queue> queueArrayList = new ArrayList<Queue>();
@@ -41,6 +51,39 @@ public class JoinQueue extends AppCompatActivity implements AdapterView.OnItemSe
         // Apply the adapter to the spinner
         stationSpinner.setAdapter(adapter);
         stationSpinner.setOnItemSelectedListener(this);
+
+        eapfBtn.setEnabled(false);
+        ebpfBtn.setEnabled(false);
+        eapfBtn.setVisibility(View.INVISIBLE);
+        ebpfBtn.setVisibility(View.INVISIBLE);
+
+        joinQueueBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                joinQueueBtn.setEnabled(false);
+                eapfBtn.setEnabled(true);
+                ebpfBtn.setEnabled(true);
+                eapfBtn.setVisibility(View.VISIBLE);
+                ebpfBtn.setVisibility(View.VISIBLE);
+                joinQueueBtn.setVisibility(View.INVISIBLE);
+            }
+        });
+
+        eapfBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                joinQueueBtn.setEnabled(true);
+                startActivity(new Intent(getApplicationContext(),CustomerView.class));
+            }
+        });
+
+        ebpfBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                joinQueueBtn.setEnabled(true);
+                startActivity(new Intent(getApplicationContext(),CustomerView.class));
+            }
+        });
 
     }
 

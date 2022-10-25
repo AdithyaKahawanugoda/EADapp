@@ -20,12 +20,12 @@
         android:paddingHorizontal="30dp">
 
         <TextView
-            android:id="@+id/join_queue_text_view"
+            android:id="@+id/join_queue_header"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="monospace"
             android:paddingBottom="40dp"
-            android:text="Pump Fuel"
+            android:text="@string/join_queue_header"
             android:textColor="#26C6DA"
             android:textSize="34sp"
             android:textStyle="bold" />
@@ -47,16 +47,42 @@
             android:layout_height="match_parent" />
 
         <Button
-            android:id="@+id/join_queue_btn"
+            android:id="@+id/join_queue_btn1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#00C2CB"
             android:fontFamily="monospace"
-            android:text="Join Queue"
+            android:padding="10dp"
+            android:text="@string/join_queue_btn1"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/join_queue_btn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/join_queue_btn2"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="24sp"
             android:textStyle="bold"
+            android:backgroundTint="#00C2CB"
+            android:fontFamily="monospace"
+            android:padding="10dp"/>
+
+        <Button
+            android:id="@+id/join_queue_btn3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/join_queue_btn3"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:backgroundTint="#00C2CB"
+            android:fontFamily="monospace"
             android:padding="10dp"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

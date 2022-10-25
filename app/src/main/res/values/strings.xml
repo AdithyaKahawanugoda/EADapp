@@ -50,6 +50,11 @@
 
     <string name="check_prices_header">Weekly Fuel Price List</string>
 
+    <string name="join_queue_header">Pump Fuel</string>
+    <string name="join_queue_btn1">Join Queue</string>
+    <string name="join_queue_btn2">Exit After Pump Fuel</string>
+    <string name="join_queue_btn3">Exit Before Pump Fuel</string>
+
     <string name="vehicle_type_spinner">Select Vehicle Type</string>
     <string-array name="vehicle_types_array">
         <item>Select Vehicle Type</item>
