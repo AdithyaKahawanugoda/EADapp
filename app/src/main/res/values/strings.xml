@@ -33,6 +33,16 @@
     <string name="restock_btn2">Time</string>
     <string name="restock_btn3">Save</string>
 
+    <string name="update_price_header">Fuel Price Updater</string>
+    <string name="update_price_input_text1">Old Price</string>
+    <string name="update_price_input_text2">New Price</string>
+    <string name="update_price_btn1">Save</string>
+
+    <string name="update_quota_header">Vehicle Fuel Quota Updater</string>
+    <string name="update_quota_input_text1">Previous Quota</string>
+    <string name="update_quota_input_text2">New Quota</string>
+    <string name="update_quota_btn1">Save</string>
+
     <string name="vehicle_type_spinner">Select Vehicle Type</string>
     <string-array name="vehicle_types_array">
         <item>Select Vehicle Type</item>
