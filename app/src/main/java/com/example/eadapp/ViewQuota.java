@@ -21,10 +21,12 @@ public class ViewQuota extends AppCompatActivity {
         vehicleList.add(new VehicleList("NA-5634","Car", "AZ-12-2345-123", 20, 12));
         vehicleList.add(new VehicleList("NA-5635","Car", "AZ-12-2345-123", 20, 12));
 
+        //initialize adapter and pass arraylist
         ViewQuotaAdapter viewQuotaAdapter = new ViewQuotaAdapter(this, vehicleList);
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
 
+        //set layout manager and adapter to recycler view
         viewQuota.setLayoutManager(linearLayoutManager);
         viewQuota.setAdapter(viewQuotaAdapter);
     }

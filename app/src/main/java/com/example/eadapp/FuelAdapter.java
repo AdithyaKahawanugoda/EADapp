@@ -15,6 +15,7 @@ public class FuelAdapter extends RecyclerView.Adapter<FuelAdapter.ViewHolder> {
     final Context context;
     private final ArrayList<Fuel> fuelList;
 
+    //Constructor
     public FuelAdapter(Context context, ArrayList<Fuel> fuelList){
         this.context = context;
         this.fuelList = fuelList;
@@ -23,19 +24,22 @@ public class FuelAdapter extends RecyclerView.Adapter<FuelAdapter.ViewHolder> {
     @NonNull
     @Override
     public FuelAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        //inflate the layout for each of the items in the recyclerview
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.card_layout, parent, false);
         return new FuelAdapter.ViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull FuelAdapter.ViewHolder holder, int position) {
+        //assigning values to text views in the card layout
         Fuel fuel = fuelList.get(position);
-        holder.fuelType.setText(fuel.fuelType);
-        holder.fuelStatus.setText(fuel.fuelStatus);
+        holder.fuelType.setText(fuel.getFuelType());
+        holder.fuelStatus.setText(fuel.getFuelStatus());
     }
 
     @Override
     public int getItemCount() {
+        //display the number of cards in the recycler view
         return fuelList.size();
     }
 
@@ -43,6 +47,7 @@ public class FuelAdapter extends RecyclerView.Adapter<FuelAdapter.ViewHolder> {
         private final TextView fuelType;
         private final TextView fuelStatus;
 
+        //initialize views
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             fuelType = itemView.findViewById(R.id.fuelAvailabilityCard_TextViewR1);
